@@ -1964,6 +1964,23 @@
     ],
     "timestamp": "Jun/19/2020 00:03"
   },
+  "CF84366565": {
+    "contest_id": 1118,
+    "language": "GNU C++17",
+    "path": "codeforces/1118/D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "Coffee and Coursework (Easy version)",
+    "problem_url": "https://codeforces.com/contest/1118/problem/D1",
+    "submission_id": "CF84366565",
+    "submission_url": "https://codeforces.com/contest/1118/submission/84366565",
+    "tags": [
+      "brute force",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Jun/20/2020 00:16"
+  },
   "CF84366598": {
     "contest_id": 1118,
     "language": "GNU C++17",
