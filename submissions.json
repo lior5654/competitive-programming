@@ -2320,6 +2320,25 @@
     ],
     "timestamp": "Jul/21/2020 17:55"
   },
+  "CF87779143": {
+    "contest_id": 1387,
+    "language": "GNU C++17",
+    "path": "codeforces/1387/B1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B1",
+    "problem_name": "Village (Minimum)",
+    "problem_url": "https://codeforces.com/contest/1387/problem/B1",
+    "submission_id": "CF87779143",
+    "submission_url": "https://codeforces.com/contest/1387/submission/87779143",
+    "tags": [
+      "*special problem",
+      "dp",
+      "greedy",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Jul/23/2020 16:50"
+  },
   "CF87901918": {
     "contest_id": 1384,
     "language": "GNU C++17",
