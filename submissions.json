@@ -3464,6 +3464,24 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF88620417": {
+    "contest_id": 1085,
+    "language": "GNU C++17",
+    "path": "codeforces/1085/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Minimum Diameter Tree",
+    "problem_url": "https://codeforces.com/contest/1085/problem/D",
+    "submission_id": "CF88620417",
+    "submission_url": "https://codeforces.com/contest/1085/submission/88620417",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "trees",
+      "*1700"
+    ],
+    "timestamp": "Jul/31/2020 22:58"
+  },
   "CF88620497": {
     "contest_id": 739,
     "language": "GNU C++17",
