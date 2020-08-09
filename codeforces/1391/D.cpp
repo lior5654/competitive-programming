@@ -60,38 +60,177 @@ template<class T> void aread(T* arr, int ___n)
 
 // LIORZ LIORZ LIORZ LIORZ LIORZ
 
-const int maxm = 1e6 + 5;const int maxn = 1e6 + 5;const int maxp = 3;
-int magic3[4] = {2, 3, 0, 1};int magic2[2] = {1, 0};
-int n, m;
-int cst(int target, int source) {
-    return popcnt(target^source);
-}
-int gen(int ini, int next, int magic[]){
-    return cst(magic[min(ini,((1<<n)-1)-ini)],next)<cst(((1<<n)-1)-magic[min(ini,((1<<n)-1)-ini)],next)?magic[min(ini,((1<<n)-1)-ini)]:((1<<n)-1)-magic[min(ini,((1<<n)-1)-ini)];
-}
-void solve(){// n<=m
-    cin >> n >> m;
-    if(n >= 4){
-        cout << -1 << endl;
-    } else if(n == 1 || m == 1){
-        cout << 0 << endl;
-    } else {
-        vector<bitset<maxp>> a(m, 0);
-        rep(i, n){rep(j, m){
-            char c; cin >> c;
-            a[j][i] = c - '0';
-        }}
-        int best = INFI;
-        rep(ini, 1<<n){
-            int curr = ini; int p = 0;
-            rep(i, m){
-                curr = gen(curr,a[i].to_ulong(),(n==2)?magic2:magic3);
-                p += cst(curr, a[i].to_ulong());
-            }
-            best = min(best, p);
+const int maxm = 1e6 + 5;
+const int maxn = 1e6 + 5;
+
+int cst(int target, int source)
+{
+    int res = 0;
+    while(target || source)
+    {
+        if(target % 2 != source % 2)
+        {
+            res++;
         }
-        cout << best << endl;
+        target /= 2;
+        source /= 2;
     }
+    return res;
+}
+pi price3(int ini, int next)
+{
+    pi out = {0, 0};
+    if(ini == 0 || ini == 7)
+    {
+        int g1 = cst(5, next);
+        int g2 = cst(2, next);
+        if(g1 < g2) return {g1, 5};
+        return {g2, 2};
+    }
+    if(ini == 1 || ini == 6)
+    {
+        int g1 = cst(3, next);
+        int g2 = cst(4, next);
+        if(g1 < g2) return {g1, 3};
+        return {g2, 4};
+    }
+    if(ini == 2 || ini == 5)
+    {
+        int g1 = cst(0, next);
+        int g2 = cst(7, next);
+        if(g1 < g2) return {g1, 0};
+        return {g2, 7};
+    }
+    if(ini == 3 || ini == 4)
+    {
+        int g1 = cst(1, next);
+        int g2 = cst(6, next);
+        if(g1 < g2) return {g1, 1};
+        return {g2, 6};
+    }
+    return out;
+}
+
+pi price2(int ini, int next)
+{
+    if(ini == 0 || ini == 3)
+    {
+        int g1 = cst(1, next);
+        int g2 = cst(2, next);
+        if(g1 < g2) return {g1, 1};
+        return {g2, 2};
+        
+    }
+    else
+    {
+        int g1 = cst(0, next);
+        int g2 = cst(3, next);
+        if(g1 < g2) return {g1, 0};
+        return {g2, 3};
+    }
+    
+}
+void solve()
+{
+    int n, m; cin >> n >> m;
+    if(n >= 4 && m >= 4)
+    {
+        cout << -1 << endl;
+    }
+    else if(n == 1 || m == 1)
+    {
+        cout << 0 << endl;
+    }
+    else
+    {
+        vector<vector<int>> a(n, vector<int>(m, 0));
+        rep(i, n)
+        {
+            rep(j, m)
+            {
+                char c; cin >> c;
+                a[i][j] = c - '0';
+            }
+        }
+        if(n==2)
+        {
+            int best = INFI;
+            for(int ini = 0; ini < 4; ++ini)
+            {
+                int curr = ini;
+                int p = 0;
+                for(int i = 0; i < m; ++i)
+                {
+                    // cout << curr << endl;
+                    int next = a[0][i] * 2 + a[1][i];
+                    pi lol = price2(curr, next); 
+                    p += lol.fi;
+                    curr = lol.se;
+                }
+                best = min(best, p);
+            }
+            cout << best << endl;
+        }
+        else if (m == 2)
+        {
+            int best = INFI;
+            for(int ini = 0; ini < 4; ++ini)
+            {
+                int curr = ini;
+                int p = 0;
+                for(int i = 0; i < n; ++i)
+                {
+                    int next = a[i][0] * 2 + a[i][1];
+                    pi lol = price2(curr, next); 
+                    p += lol.fi;
+                    curr = lol.se;
+                }
+                best = min(best, p);
+            }
+            cout << best << endl;
+        }
+        else if (n == 3)
+        {
+            int best = INFI;
+            for(int ini = 0; ini < 8; ++ini)
+            {
+                int curr = ini;
+                int p = 0;
+                for(int i = 0; i < m; ++i)
+                {
+                    // cout << curr << endl;
+                    int next = a[0][i] * 4 + a[1][i] * 2 + a[2][i];
+                    pi lol = price3(curr, next); 
+                    p += lol.fi;
+                    curr = lol.se;
+                }
+                best = min(best, p);
+            }
+            cout << best << endl;
+        }
+        else
+        {
+            assert(m==3);
+            int best = INFI;
+            for(int ini = 0; ini < 8; ++ini)
+            {
+                int curr = ini;
+                int p = 0;
+                for(int i = 0; i < n; ++i)
+                {
+                    int next = a[i][0] * 4 + a[i][1] * 2 + a[i][2];
+                    pi lol = price3(curr, next); 
+                    p += lol.fi;
+                    curr = lol.se;
+                }
+                best = min(best, p);
+            }
+            cout << best << endl;
+        }
+        
+    }
+    
+    
 }
 int main()
 {
