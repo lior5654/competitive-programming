@@ -3464,6 +3464,23 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF91170172": {
+    "contest_id": 282,
+    "language": "GNU C++11",
+    "path": "codeforces/282/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Yet Another Number Game",
+    "problem_url": "https://codeforces.com/contest/282/problem/D",
+    "submission_id": "CF91170172",
+    "submission_url": "https://codeforces.com/contest/282/submission/91170172",
+    "tags": [
+      "dp",
+      "games",
+      "*2100"
+    ],
+    "timestamp": "Aug/28/2020 01:39"
+  },
   "CF91170514": {
     "contest_id": 282,
     "language": "GNU C++11",
