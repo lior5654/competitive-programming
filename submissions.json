@@ -3464,6 +3464,22 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF91167322": {
+    "contest_id": 939,
+    "language": "GNU C++11",
+    "path": "codeforces/939/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Love Triangle",
+    "problem_url": "https://codeforces.com/contest/939/problem/A",
+    "submission_id": "CF91167322",
+    "submission_url": "https://codeforces.com/contest/939/submission/91167322",
+    "tags": [
+      "graphs",
+      "*800"
+    ],
+    "timestamp": "Aug/27/2020 23:51"
+  },
   "CF91167523": {
     "contest_id": 421,
     "language": "GNU C++11",
