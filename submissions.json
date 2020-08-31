@@ -3464,6 +3464,25 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF91527305": {
+    "contest_id": 754,
+    "language": "GNU C++11",
+    "path": "codeforces/754/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Fedor and coupons",
+    "problem_url": "https://codeforces.com/contest/754/problem/D",
+    "submission_id": "CF91527305",
+    "submission_url": "https://codeforces.com/contest/754/submission/91527305",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "sortings",
+      "*2100"
+    ],
+    "timestamp": "Sep/01/2020 02:12"
+  },
   "CF91804098": {
     "contest_id": 1409,
     "language": "GNU C++11",
