@@ -3464,6 +3464,22 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF92995623": {
+    "contest_id": 383,
+    "language": "JavaScript",
+    "path": "codeforces/383/D.js",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Antimatter",
+    "problem_url": "https://codeforces.com/contest/383/problem/D",
+    "submission_id": "CF92995623",
+    "submission_url": "https://codeforces.com/contest/383/submission/92995623",
+    "tags": [
+      "dp",
+      "*2300"
+    ],
+    "timestamp": "Sep/16/2020 20:11"
+  },
   "CF93068550": {
     "contest_id": 317,
     "language": "GNU C++17 (64)",
