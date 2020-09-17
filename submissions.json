@@ -3464,6 +3464,23 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF93068550": {
+    "contest_id": 317,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/317/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Game with Powers",
+    "problem_url": "https://codeforces.com/contest/317/problem/D",
+    "submission_id": "CF93068550",
+    "submission_url": "https://codeforces.com/contest/317/submission/93068550",
+    "tags": [
+      "dp",
+      "games",
+      "*2300"
+    ],
+    "timestamp": "Sep/17/2020 20:39"
+  },
   "CF93119486": {
     "contest_id": 505,
     "language": "GNU C++17 (64)",
