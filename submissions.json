@@ -3464,6 +3464,25 @@
     ],
     "timestamp": "Jul/30/2020 17:43"
   },
+  "CF93294345": {
+    "contest_id": 274,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/274/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Zero Tree",
+    "problem_url": "https://codeforces.com/contest/274/problem/B",
+    "submission_id": "CF93294345",
+    "submission_url": "https://codeforces.com/contest/274/submission/93294345",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "greedy",
+      "trees",
+      "*1800"
+    ],
+    "timestamp": "Sep/20/2020 05:18"
+  },
   "CF93330687": {
     "contest_id": 35,
     "language": "GNU C++17 (64)",
