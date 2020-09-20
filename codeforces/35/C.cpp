@@ -13,7 +13,7 @@
                       /,.`      `.__,'`-.__,
                       \_  _               \
                      ,'  / `,          `.,'
-               ___,'`-._ \_/     `,._        ;
+               ___,'`-._ \_/ `,._        ;
             __;_,'      `-.`-'./ `--.____)
          ,-'           _,--\^-'
        ,:_____      ,-'     \
@@ -31,7 +31,7 @@
 -hrr-    )-.__,-- ||___,--' `-.
         /._______,|__________,'\
         `--.____,'|_________,-'
- 
+
                              __
                    _ ,___,-'",-=-.
        __,-- _ _,-'_)_  (""`'-._\ `.
@@ -57,17 +57,17 @@
           /             |               \
        ,-'              |               /
       /                 |             -'
- 
+
 */
- 
+
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp> // Common file
 #include <ext/pb_ds/tree_policy.hpp> // Including 
- 
+
 using namespace __gnu_pbds;
 using namespace std;
- 
- 
+
+
 typedef long long int ll;
 typedef pair<int, int> pi;
 typedef pair<ll, ll> pl;
@@ -84,38 +84,35 @@ typedef multiset<int> msi;
 typedef set<ll> sl;
 typedef multiset<ll> msl;
 typedef tree<
-pi,
+int,
 null_type,
-less<pi>,
+less<int>,
 rb_tree_tag,
 tree_order_statistics_node_update>
 ordered_set;
- 
- 
-typedef long double ld;
+
+template<class T> using func = function<T>;
+
 #define clrcin cin.ignore(numeric_limits<streamsize>::max(),'\n');
 #define GOGOGO ios::sync_with_stdio(false); cin.tie(nullptr);
 #define BYEBYE return 0;
- 
+
 #define all(cn) (cn).begin(), (cn).end()
 #define rep(i, n) for (int i = 0; i < n; ++i)
 #define repk(i, k, n) for(int i = k; i < n; ++i)
- 
+
 #define mp make_pair
 #define pb push_back
 #define fi first
 #define se second
- 
+
 #define popcnt __builtin_popcount
 #define gcd std::__detail::__gcd
 #define lcm std::__detail::__lcm
- 
+
 const int INFI = 1e9 + 5;
 const ll INFL = 4e18 + 5;
- 
- 
- 
-template<class T> using func = function<T>;
+
 template<class T> void aread(T* arr, int ___n)
 {
     rep(i, ___n)
@@ -123,101 +120,135 @@ template<class T> void aread(T* arr, int ___n)
         cin >> arr[i];
     }
 }
- 
- 
+
+
 // LIORZ LIORZ LIORZ LIORZ LIORZ
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-//#define BRUH_WHY_TESTCASES
-
-const int maxn = 2005;
-const int maxm = 2005;
-const int maxk = 10;
-
-int n;
-int m;
-int k;
-
-int dist[maxn][maxn] = { { 0 } };
 
 
-int dx[4] = {1, -1, 0, 0};
-int dy[4] = {0, 0, 1, -1};
 
-bool valid(const pi& crd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int d4x[4] = {1, -1, 0, 0};
+int d4y[4] = {0, 0, 1, -1};
+
+
+
+const int maxn = 2e3 + 5;
+int n, m;
+int d[maxn][maxn];
+bool valid(int y, int x)
 {
-    return crd.first > 0 && crd.first <= n && crd.second > 0 && crd.second <= m && (dist[crd.first][crd.second] == INFI);
+    return x >= 1 && y >= 1 && x <= n && y <= m && d[y][x] < 0; 
 }
+//#define BRUH_WHY_TESTCASES
 void solve()
 {
-    
-    cin >> n >> m;
-    for(int i = 1; i <= n; ++i)
-    {
-        for(int j = 1; j <=m; ++j)
-        {
-            dist[i][j] = INFI;
-        }
-    }
-    cin >> k;
+    memset(d, 0xFF, sizeof(d));
+    cin >> n >> m; int k; cin >> k;
     queue<pi> bfs;
+    pi res;
     rep(i, k)
     {
-        pi startPoint; cin >> startPoint.first >> startPoint.second;
-        dist[startPoint.first][startPoint.second] = 0;
-        bfs.push(startPoint);
-        // fi first, se second
+        int x, y; cin >> x >> y;
+        d[y][x] = 0;
+        bfs.push(mp(y, x));
+        res = {y, x};
     }
-    pi currentBest = bfs.front();
-    while(!bfs.empty()) {
-        auto current = bfs.front(); bfs.pop();
-        for(int i = 0; i < 4; ++i)
+    while(!bfs.empty())
+    {
+        pi c = bfs.front(); bfs.pop();
+        if(d[res.fi][res.se] < d[c.fi][c.se])
         {
-            if(valid({current.first+dy[i], current.second+dx[i]}))
+            res = c;
+        }
+        for(int o = 0; o < 4; ++o)
+        {
+            if(valid(c.fi + d4y[o], c.se + d4x[o]))
             {
-                dist[current.first+dy[i]][current.second+dx[i]] = dist[current.first][current.second] + 1;
-                bfs.push({current.first+dy[i], current.second+dx[i]});
-                if(dist[current.first+dy[i]][current.second+dx[i]] > dist[currentBest.fi][currentBest.se])
-                {
-                    currentBest = {current.first+dy[i], current.second+dx[i]};
-                }
+                d[c.fi + d4y[o]][c.se + d4x[o]] = 1 + d[c.fi][c.se];
+                bfs.push({c.fi + d4y[o], c.se + d4x[o]});
             }
         }
     }
-
-
-    // O(k + n*m)
-    cout << currentBest.fi << " " << currentBest.se << '\n';
+    cout << res.se << ' ' << res.fi << '\n';
 }
 
- 
- 
- 
- 
- 
- 
-signed main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main()
 {
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
     GOGOGO
-    cout << fixed << setprecision(6);
+    freopen("input.txt", "r", stdin); 
+    freopen("output.txt", "w", stdout);
     int t=1;
     #ifdef BRUH_WHY_TESTCASES
-            cin >> t;
+        cin >> t;
     #endif
     while(t--)
     {
@@ -225,7 +256,7 @@ signed main()
     }
     BYEBYE
 }
- 
+
 /* PLEASE READ THIS
 * N = 1
 * GUESS A!!!!!!!
