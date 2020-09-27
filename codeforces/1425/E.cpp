@@ -3,29 +3,29 @@
 #define ford(i, k, n) for (int i = k; i >= n; i--)
 #define pb push_back
 #define mp make_pair
- 
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <string>
 #include <list>
- 
+
 using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
- 
+
 const int sz = 2e5;
 int n, k;
 ll add[sz], cost[sz], pre[sz], suf[sz], mnpre[sz], mnsuf[sz], bestSufTake[sz], bestSufTakeFromPre[sz];
- 
+
 void input() {
 	cin >> n >> k;
 	foru(i, 0, n)cin >> add[i];
 	foru(i, 0, n)cin >> cost[i];
 }
- 
+
 void initPreSuf() {
 	foru(i, 0, n)pre[i] = add[i] + (i ? pre[i - 1] : 0);
 	ford(i, n - 1, 0)suf[i] = add[i] + (i != n - 1 ? suf[i + 1] : 0);
@@ -38,24 +38,24 @@ void initPreSuf() {
 	}
 	
 }
- 
+
 void solveZero() {
 	cout << max(0LL,bestSufTake[0]) << endl;
 }
- 
+
 void solveEven() {
 	ll bst = max(0LL,bestSufTake[0]);
 	foru(i, 0, n - 1)bst = max(bst, pre[n - 1] - cost[i]);
 	cout << bst << endl;
 }
- 
+
 void solveOne() {
 	ll bst = max(0LL, bestSufTake[1]);
 	for (int i = 1; i < n - 1; i++) bst = max(bst, pre[i] - mnpre[i] + bestSufTake[i + 1]);
 	for (int i = 1; i < n - 1; i++) bst = max(bst, max(bestSufTakeFromPre[i - 1] - add[i], bestSufTake[i + 1]) + max(0LL, add[i] - cost[i]));
 	cout << bst << endl;
 }
- 
+
 void solveOdd() {
 	ll bst = max(0LL, bestSufTake[1]);
     ll best = add[0] - cost[0];
@@ -81,7 +81,7 @@ void solveOdd() {
 	}
     cout << bst << endl;
 }
- 
+
 int main() {
 	fast;
 	input();
