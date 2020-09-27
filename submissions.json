@@ -2320,6 +2320,23 @@
     ],
     "timestamp": "Jul/21/2020 17:55"
   },
+  "CF93953541": {
+    "contest_id": 1425,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1425/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Excitation of Atoms",
+    "problem_url": "https://codeforces.com/contest/1425/problem/E",
+    "submission_id": "CF93953541",
+    "submission_url": "https://codeforces.com/contest/1425/submission/93953541",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*2200"
+    ],
+    "timestamp": "Sep/27/2020 15:01"
+  },
   "CF93953572": {
     "contest_id": 1425,
     "language": "GNU C++17 (64)",
