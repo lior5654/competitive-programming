@@ -3,22 +3,22 @@
 #define ford(i, k, n) for (int i = k; i >= n; i--)
 #define pb push_back
 #define mp make_pair
- 
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <string>
 #include <list>
- 
+
 using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
- 
+
 const int sz = 2e3;
 ll dp[sz];
- 
+
 ll solve(ll n) {
 	ll tot = 0;
 	bool me = 1;
@@ -41,7 +41,7 @@ ll solve(ll n) {
 	}
 	return tot;
 }
- 
+
 int main() {
 	fast;
 	int t;
