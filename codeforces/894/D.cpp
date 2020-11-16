@@ -168,7 +168,7 @@ struct dsdata {
         auto it = lower_bound(all(data), h+1ll);
         int cnt =  it -data.begin();
         return {prefix[cnt], cnt};
-    }   
+    }
 } ds[maxn];
 void dfs(int c, ll dd = 0) {
     d[c] = dd;
@@ -251,7 +251,6 @@ void solve() {
 int main()
 {
     GOGOGO
-    //cout << "heello";
     int t=1;
     #ifdef BRUH_WHY_TESTCASES
         cin >> t;
