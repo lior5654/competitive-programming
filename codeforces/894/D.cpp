@@ -175,16 +175,13 @@ void dfs(int c, ll dd = 0) {
     ds[c].prefix.pb(0);
     ds[c].data.pb(d[c]);
     if(2*c -1 < n) {
-        dfs(2*c, dd + g[2*c - 1]); 
-        int endLeft = ds[c].data.size(); copy(all(ds[2*c].data), back_inserter(ds[c].data));
-        inplace_merge(ds[c].data.begin(), ds[c].data.begin() + endLeft, ds[c].data.end());
+        dfs(2*c, dd + g[2*c - 1]); vi temp; merge(all(ds[c].data), all(ds[2*c].data), back_inserter(temp)); 
+        ds[c].data.clear(); copy(all(temp), back_inserter(ds[c].data));
     }
     if(2*c < n) {
-        dfs(2*c + 1, dd + g[2*c]);
-        int endLeft = ds[c].data.size(); copy(all(ds[2*c+1].data), back_inserter(ds[c].data));
-        inplace_merge(ds[c].data.begin(), ds[c].data.begin() + endLeft, ds[c].data.end());
+        dfs(2*c+1, dd + g[2*c]); vi temp; merge(all(ds[c].data), all(ds[2*c+1].data), back_inserter(temp)); 
+        ds[c].data.clear(); copy(all(temp), back_inserter(ds[c].data));
     }
-
     for(int i = 1; i <= ds[c].data.size(); ++i) {
         ds[c].prefix.pb(ds[c].prefix[i-1] + (ll)ds[c].data[i-1]);
     }
