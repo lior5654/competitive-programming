@@ -175,13 +175,12 @@ void dfs(int c, ll dd = 0) {
     ds[c].prefix.pb(0);
     ds[c].data.pb(d[c]);
     if(2*c -1 < n) {
-        dfs(2*c, dd + g[2*c - 1]); vi temp; merge(all(ds[c].data), all(ds[2*c].data), back_inserter(temp)); 
-        ds[c].data.clear(); copy(all(temp), back_inserter(ds[c].data));
+        dfs(2*c, dd + g[2*c - 1]); copy(all(ds[2*c].data), back_inserter(ds[c].data));
     }
     if(2*c < n) {
-        dfs(2*c+1, dd + g[2*c]); vi temp; merge(all(ds[c].data), all(ds[2*c+1].data), back_inserter(temp)); 
-        ds[c].data.clear(); copy(all(temp), back_inserter(ds[c].data));
+        dfs(2*c + 1, dd + g[2*c]); copy(all(ds[2*c+1].data), back_inserter(ds[c].data));
     }
+    sort(all(ds[c].data)); // this can be optimize with std::merge
     for(int i = 1; i <= ds[c].data.size(); ++i) {
         ds[c].prefix.pb(ds[c].prefix[i-1] + (ll)ds[c].data[i-1]);
     }
