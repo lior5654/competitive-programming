@@ -770,6 +770,25 @@
     ],
     "timestamp": "Mar/06/2022 02:56"
   },
+  "CF99355923": {
+    "contest_id": 1406,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1406/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Three Sequences",
+    "problem_url": "https://codeforces.com/contest/1406/problem/D",
+    "submission_id": "CF99355923",
+    "submission_url": "https://codeforces.com/contest/1406/submission/99355923",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "Nov/24/2020 01:56"
+  },
   "CF99393323": {
     "contest_id": 1169,
     "language": "GNU C++17 (64)",
