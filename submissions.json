@@ -770,6 +770,22 @@
     ],
     "timestamp": "Mar/06/2022 02:56"
   },
+  "CF99393323": {
+    "contest_id": 1169,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1169/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Good Triple",
+    "problem_url": "https://codeforces.com/contest/1169/problem/D",
+    "submission_id": "CF99393323",
+    "submission_url": "https://codeforces.com/contest/1169/submission/99393323",
+    "tags": [
+      "brute force",
+      "*1900"
+    ],
+    "timestamp": "Nov/24/2020 14:23"
+  },
   "CF99749648": {
     "contest_id": 803,
     "language": "GNU C++17 (64)",
