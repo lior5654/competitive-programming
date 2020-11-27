@@ -769,5 +769,22 @@
       "*3300"
     ],
     "timestamp": "Mar/06/2022 02:56"
+  },
+  "CF99749648": {
+    "contest_id": 803,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/803/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Roma and Poker",
+    "problem_url": "https://codeforces.com/contest/803/problem/E",
+    "submission_id": "CF99749648",
+    "submission_url": "https://codeforces.com/contest/803/submission/99749648",
+    "tags": [
+      "dp",
+      "graphs",
+      "*2000"
+    ],
+    "timestamp": "Nov/27/2020 23:19"
   }
 }
