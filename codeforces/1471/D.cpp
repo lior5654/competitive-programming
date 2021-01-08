@@ -41,23 +41,23 @@ typedef vector<vpld> vvpld;
 
 const ll mod = 1e9 + 7;
 const ll big = 1e15;
-const int maxn =  3e5 + 5;
-const int maxv = 1e6 + 5;
+const int maxn =  1000010;
+ 
  
 
-vll m[maxv];
-bitset<maxv> done = 0;
+vll m[maxn];
+bitset<maxn> done = 0;
 ll arr[maxn];
 void sieve() {
-    for(int i = 0; i < maxv; ++i) {
+    for(int i = 0; i < maxn; ++i) {
         m[i].clear();
     }
     done = 0;
-	for (ll i = 2; i < maxv; i++)
+	for (ll i = 2; i < maxn; i++)
 	{
 		if (done[i]) continue;
 		m[i].push_back(i);
-		for (ll j = 2*i; j < maxv; j += i)
+		for (ll j = 2*i; j < maxn; j += i)
 		{
 			done[j] = true;
 			ll curdiv = 0;
