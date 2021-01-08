@@ -47,9 +47,13 @@ const int maxv = 1e6 + 5;
 
 vll m[maxv];
 bitset<maxv> done = 0;
-vll arr;
+ll arr[maxn];
 
 void sieve() {
+    for(int i = 0; i < maxv; ++i) {
+        m[i].clear();
+    }
+    done = 0;
 	for (ll i = 2; i < maxv; i++)
 	{
 		if (done[i]) continue;
@@ -76,7 +80,6 @@ void solve()
  
 	ll n;
 	cin >> n;
-    arr.resize(n, 0);
 	for (ll i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
