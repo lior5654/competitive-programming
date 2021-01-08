@@ -1,6 +1,6 @@
-// optimizing yovanel's code
+// optimizing yovanel's code bruh
 #pragma GCC target ("avx2")
-#pragma GCC optimization ("O2")
+#pragma GCC optimization ("O3")
 #pragma GCC optimization ("unroll-loops")
 #include <bits/stdc++.h>
 using namespace std;
@@ -48,7 +48,6 @@ const int maxv = 1e6 + 5;
 vll m[maxv];
 bitset<maxv> done = 0;
 ll arr[maxn];
-
 void sieve() {
     for(int i = 0; i < maxv; ++i) {
         m[i].clear();
@@ -86,11 +85,12 @@ void solve()
 	map<vll, ll> s;
 	for (ll i = 0; i < n; i++) {
 		ll cur = arr[i];
-        if(!s.count(m[cur])) {
-            s[m[cur]] = 0;
-        }
-        s[m[cur]]++;
-		
+		auto it = s.find(m[cur]);
+		if (it == s.end())
+		{
+			s.insert({ m[cur], 1 });
+		}
+		else (it->second)++;
 	}
 	ll ans0 = 0;
 	ll joiningsum = 0;
