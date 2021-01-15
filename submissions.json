@@ -104,6 +104,23 @@
     ],
     "timestamp": "Dec/08/2020 00:20"
   },
+  "CF104451553": {
+    "contest_id": 935,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/935/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Fafa and Ancient Alphabet",
+    "problem_url": "https://codeforces.com/contest/935/problem/D",
+    "submission_id": "CF104451553",
+    "submission_url": "https://codeforces.com/contest/935/submission/104451553",
+    "tags": [
+      "math",
+      "probabilities",
+      "*1900"
+    ],
+    "timestamp": "Jan/16/2021 00:11"
+  },
   "CF105210353": {
     "contest_id": 383,
     "language": "GNU C++17 (64)",
