@@ -104,6 +104,25 @@
     ],
     "timestamp": "Dec/08/2020 00:20"
   },
+  "CF108949680": {
+    "contest_id": 1494,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1494/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Berland Crossword",
+    "problem_url": "https://codeforces.com/contest/1494/problem/B",
+    "submission_id": "CF108949680",
+    "submission_url": "https://codeforces.com/contest/1494/submission/108949680",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "greedy",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Mar/02/2021 19:25"
+  },
   "CF109118801": {
     "contest_id": 1042,
     "language": "GNU C++17 (64)",
