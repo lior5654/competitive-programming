@@ -608,6 +608,25 @@
     ],
     "timestamp": "Mar/07/2021 00:50"
   },
+  "CF109560077": {
+    "contest_id": 1495,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1495/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Diamond Miner",
+    "problem_url": "https://codeforces.com/contest/1495/problem/A",
+    "submission_id": "CF109560077",
+    "submission_url": "https://codeforces.com/contest/1495/submission/109560077",
+    "tags": [
+      "geometry",
+      "greedy",
+      "math",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Mar/10/2021 14:13"
+  },
   "CF109580365": {
     "contest_id": 1495,
     "language": "GNU C++17 (64)",
