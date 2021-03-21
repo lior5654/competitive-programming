@@ -889,6 +889,24 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF110635985": {
+    "contest_id": 1483,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1483/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Basic Diplomacy",
+    "problem_url": "https://codeforces.com/contest/1483/problem/A",
+    "submission_id": "CF110635985",
+    "submission_url": "https://codeforces.com/contest/1483/submission/110635985",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Mar/21/2021 15:40"
+  },
   "CF110648358": {
     "contest_id": 1483,
     "language": "GNU C++17 (64)",
