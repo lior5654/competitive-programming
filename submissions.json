@@ -889,6 +889,25 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF110648358": {
+    "contest_id": 1483,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1483/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Skyline Photo",
+    "problem_url": "https://codeforces.com/contest/1483/problem/C",
+    "submission_id": "CF110648358",
+    "submission_url": "https://codeforces.com/contest/1483/submission/110648358",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "Mar/21/2021 16:21"
+  },
   "CF110852012": {
     "contest_id": 1499,
     "language": "GNU C++17 (64)",
