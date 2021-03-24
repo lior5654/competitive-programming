@@ -140,15 +140,6 @@ vi g[maxn];
 vi gd[maxn];
 int odeg[maxn];
 pi dp[maxk][maxn];
-int mprod(int l, int r) {
-    return (((ll)l)*((ll)r))%mod;
-}
-int madd(int a, int b) {
-    return (((a+b)%mod)+mod)%mod;
-}
-void meadd(int& a, int b) {
-    a += b; a%=mod; a += mod; a %= mod;
-}
 void dfs(int c, int p = 0) {
     for(auto e : g[c]) {
         if(e!=p) {
@@ -160,32 +151,54 @@ void dfs(int c, int p = 0) {
         dp[i][c].fi = 1; 
     }
     for(int cn = 1; cn <= odeg[c]; ++cn) {
-        int right_atmost_k = dp[k][gd[c][cn-1]].fi;
-        dp[0][c].se = mprod(right_atmost_k, dp[0][c].fi);
+        ll right_atmost_k = dp[k][gd[c][cn-1]].fi;
+        dp[0][c].se = (right_atmost_k * dp[0][c].fi) % mod;
         for(int w = 1; w <= k; ++w) {
             dp[w][c].se = dp[w-1][c].se;
-            int left_exact_w = madd(dp[w][c].fi, -dp[w-1][c].fi);
-            meadd(dp[w][c].se, mprod(left_exact_w, right_atmost_k));
+            // max depth is exactly w, hmmmmm we dont want to pass k fuck me
+            ll left_exact_w = ((dp[w][c].fi - dp[w-1][c].fi+mod)%mod);
+            // option 1: removing the edge
+            dp[w][c].se += (left_exact_w * right_atmost_k) % mod;
+            dp[w][c].se %= mod;
+            // option 2: (the hard part): not removing the edge
+            // inclusion-exclusion: left max exact w + right max exact w-1 - both conditions
+            // left exact w -> right atmost min(w-1,k-w-1)
             if(k-w-1>=0) {
-                int right_atmost_kwm1 = dp[min((ll)w-1,k-w-1)][gd[c][cn-1]].fi;
-                meadd(dp[w][c].se, mprod(left_exact_w, right_atmost_kwm1));
+                ll right_atmost_kwm1 = dp[min((ll)w-1,k-w-1)][gd[c][cn-1]].fi;
+                dp[w][c].se += (left_exact_w * right_atmost_kwm1) % mod;
+                dp[w][c].se %= mod; 
             }
+            // right exact w-1 -> left atmost min(w,k-w)
             if(k-w>=0 && w-1>=0) {
-                int left_atmost_kmw = dp[min((ll)w,k-w)][c].fi;
-                int right_exact_wm1 =  dp[w-1][gd[c][cn-1]].fi;
-                if(w-2 >= 0)
-                    meadd(right_exact_wm1, -dp[w-2][gd[c][cn-1]].fi);
-                meadd(dp[w][c].se, mprod(left_atmost_kmw, right_exact_wm1));
+                ll left_atmost_kmw = dp[min((ll)w,k-w)][c].fi;
+                ll right_exact_wm1 =  dp[w-1][gd[c][cn-1]].fi;
+                if(w-2 >= 0) {
+                    right_exact_wm1 -= dp[w-2][gd[c][cn-1]].fi;
+                    right_exact_wm1 %= mod;
+                    right_exact_wm1 += mod;
+                    right_exact_wm1 %= mod;
+                }
+                dp[w][c].se += (left_atmost_kmw * right_exact_wm1) % mod;
+                dp[w][c].se %= mod; 
             }
+            // both (left w, right w-1)
             if(w-1>=0&&k-w-1>=w-1&&k-w>=w) {
-                int right_exact_wm1 =  dp[w-1][gd[c][cn-1]].fi;
-                if(w-2 >= 0)
-                    meadd(right_exact_wm1, -dp[w-2][gd[c][cn-1]].fi);
-                meadd(dp[w][c].se, -mprod(right_exact_wm1, left_exact_w));
+                ll right_exact_wm1 =  dp[w-1][gd[c][cn-1]].fi;
+                if(w-2 >= 0) {
+                    right_exact_wm1 -= dp[w-2][gd[c][cn-1]].fi;
+                    right_exact_wm1 %= mod;
+                    right_exact_wm1 += mod;
+                    right_exact_wm1 %= mod;
+                }
+                dp[w][c].se -= (right_exact_wm1 * left_exact_w) % mod;
+                dp[w][c].se %= mod;
+                dp[w][c].se += mod;
+                dp[w][c].se %= mod;
             }
         }
         for(int w = 0; w <= k; ++w) {
-            dp[w][c].fi = dp[w][c].se;
+            ll res = dp[w][c].se;
+            dp[w][c].fi = res;
         }
     }
 }
@@ -196,6 +209,7 @@ void solve() {
     }
     dfs(1);
     cout << dp[k][1].fi << '\n';
+
 }
  
  
