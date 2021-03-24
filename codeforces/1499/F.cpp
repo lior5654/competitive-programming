@@ -139,7 +139,7 @@ int n; ll k;
 vi g[maxn];
 vi gd[maxn];
 int odeg[maxn];
-pi dp[maxk][maxn];
+vvpi dp; //[maxk][maxn];
 //vl pre[maxk][maxn];
 void dfs(int c, int p = 0) {
     //auto start = chrono::high_resolution_clock::now();
@@ -221,7 +221,7 @@ void dfs(int c, int p = 0) {
 void solve() {
     //auto start = chrono::high_resolution_clock::now();
     cin >> n >> k;
-    //dp.resize(k+1, vpi(n+1, {0, 0}));
+    dp.resize(k+1, vpi(n+1, {0, 0}));
     /*if(n*k>=1000000) {
         assert(false);
     }*/
