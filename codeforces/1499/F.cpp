@@ -140,20 +140,30 @@ vi g[maxn];
 vi gd[maxn];
 int odeg[maxn];
 pi dp[maxk][maxn];
+//vl pre[maxk][maxn];
 void dfs(int c, int p = 0) {
+    //auto start = chrono::high_resolution_clock::now();
+    //cout << c << " ";
     for(auto e : g[c]) {
         if(e!=p) {
             dfs(e, c); odeg[c]++;
             gd[c].pb(e);
         }
     }
+    /*
+    for(int i = 0; i <= k; ++i) {
+        dp[i][c].resize(2, 0);
+        //pre[i][c].resize(odeg[c]+1, 0);
+    }*/
     for(int i = 0; i <= k; ++i) {
         dp[i][c].fi = 1; 
     }
     for(int cn = 1; cn <= odeg[c]; ++cn) {
+        //cout << c << " " << cn << '\n';
         ll right_atmost_k = dp[k][gd[c][cn-1]].fi;
         dp[0][c].se = (right_atmost_k * dp[0][c].fi) % mod;
         for(int w = 1; w <= k; ++w) {
+            //cout << "w " << w << '\n';
             dp[w][c].se = dp[w-1][c].se;
             // max depth is exactly w, hmmmmm we dont want to pass k fuck me
             ll left_exact_w = ((dp[w][c].fi - dp[w-1][c].fi+mod)%mod);
@@ -182,6 +192,7 @@ void dfs(int c, int p = 0) {
                 dp[w][c].se %= mod; 
             }
             // both (left w, right w-1)
+
             if(w-1>=0&&k-w-1>=w-1&&k-w>=w) {
                 ll right_exact_wm1 =  dp[w-1][gd[c][cn-1]].fi;
                 if(w-2 >= 0) {
@@ -201,14 +212,30 @@ void dfs(int c, int p = 0) {
             dp[w][c].fi = res;
         }
     }
+    //auto end = chrono::high_resolution_clock::now();
+    //auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    //cout << duration.count() << '\n';
+
 }
+
 void solve() {
+    //auto start = chrono::high_resolution_clock::now();
     cin >> n >> k;
+    //dp.resize(k+1, vpi(n+1, {0, 0}));
+    /*if(n*k>=1000000) {
+        assert(false);
+    }*/
     rep(i, n-1) {
         int s, t; cin >> s >> t; g[s].pb(t); g[t].pb(s);
     }
+    //auto end = chrono::high_resolution_clock::now();
+    //auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    //cout << duration.count() << '\n';
     dfs(1);
     cout << dp[k][1].fi << '\n';
+    //end = chrono::high_resolution_clock::now();
+    //duration = chrono::duration_cast<chrono::microseconds>(end - start);
+    //cout << duration.count() << '\n';
 
 }
  
