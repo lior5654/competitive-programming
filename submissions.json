@@ -889,6 +889,23 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF111070803": {
+    "contest_id": 1172,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1172/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Nauuo and Cards",
+    "problem_url": "https://codeforces.com/contest/1172/problem/A",
+    "submission_id": "CF111070803",
+    "submission_url": "https://codeforces.com/contest/1172/submission/111070803",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Mar/25/2021 19:55"
+  },
   "CF111422497": {
     "contest_id": 1493,
     "language": "GNU C++17 (64)",
