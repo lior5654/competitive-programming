@@ -889,6 +889,23 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF111508352": {
+    "contest_id": 710,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/710/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Two Arithmetic Progressions",
+    "problem_url": "https://codeforces.com/contest/710/problem/D",
+    "submission_id": "CF111508352",
+    "submission_url": "https://codeforces.com/contest/710/submission/111508352",
+    "tags": [
+      "math",
+      "number theory",
+      "*2500"
+    ],
+    "timestamp": "Mar/30/2021 23:19"
+  },
   "CF111570611": {
     "contest_id": 903,
     "language": "GNU C++17 (64)",
