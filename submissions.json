@@ -889,6 +889,27 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF113777556": {
+    "contest_id": 1516,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1516/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Cut",
+    "problem_url": "https://codeforces.com/contest/1516/problem/D",
+    "submission_id": "CF113777556",
+    "submission_url": "https://codeforces.com/contest/1516/submission/113777556",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "graphs",
+      "number theory",
+      "two pointers",
+      "*2100"
+    ],
+    "timestamp": "Apr/21/2021 18:11"
+  },
   "CF114469292": {
     "contest_id": 549,
     "language": "GNU C++17 (64)",
