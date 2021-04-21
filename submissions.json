@@ -889,6 +889,25 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF113763633": {
+    "contest_id": 1516,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1516/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Baby Ehab Partitions Again",
+    "problem_url": "https://codeforces.com/contest/1516/problem/C",
+    "submission_id": "CF113763633",
+    "submission_url": "https://codeforces.com/contest/1516/submission/113763633",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "dp",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Apr/21/2021 17:42"
+  },
   "CF113777556": {
     "contest_id": 1516,
     "language": "GNU C++17 (64)",
