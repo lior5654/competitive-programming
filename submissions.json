@@ -889,6 +889,25 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF114781465": {
+    "contest_id": 1139,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1139/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Steps to One",
+    "problem_url": "https://codeforces.com/contest/1139/problem/D",
+    "submission_id": "CF114781465",
+    "submission_url": "https://codeforces.com/contest/1139/submission/114781465",
+    "tags": [
+      "dp",
+      "math",
+      "number theory",
+      "probabilities",
+      "*2300"
+    ],
+    "timestamp": "May/01/2021 17:24"
+  },
   "CF114858180": {
     "contest_id": 660,
     "language": "GNU C++17 (64)",
