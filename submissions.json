@@ -889,6 +889,23 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF114858180": {
+    "contest_id": 660,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/660/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Different Subsets For All Tuples",
+    "problem_url": "https://codeforces.com/contest/660/problem/E",
+    "submission_id": "CF114858180",
+    "submission_url": "https://codeforces.com/contest/660/submission/114858180",
+    "tags": [
+      "combinatorics",
+      "math",
+      "*2300"
+    ],
+    "timestamp": "May/02/2021 15:57"
+  },
   "CF114865956": {
     "contest_id": 1515,
     "language": "GNU C++17 (64)",
