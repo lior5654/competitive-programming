@@ -889,6 +889,24 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF115152594": {
+    "contest_id": 1183,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1183/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Candy Box (hard version)",
+    "problem_url": "https://codeforces.com/contest/1183/problem/G",
+    "submission_id": "CF115152594",
+    "submission_url": "https://codeforces.com/contest/1183/submission/115152594",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*2000"
+    ],
+    "timestamp": "May/05/2021 01:06"
+  },
   "CF115497007": {
     "contest_id": 1363,
     "language": "GNU C++17 (64)",
