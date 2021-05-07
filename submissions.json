@@ -889,6 +889,25 @@
     ],
     "timestamp": "Mar/10/2021 23:32"
   },
+  "CF115497007": {
+    "contest_id": 1363,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1363/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Guess The Maximums",
+    "problem_url": "https://codeforces.com/contest/1363/problem/D",
+    "submission_id": "CF115497007",
+    "submission_url": "https://codeforces.com/contest/1363/submission/115497007",
+    "tags": [
+      "binary search",
+      "implementation",
+      "interactive",
+      "math",
+      "*2100"
+    ],
+    "timestamp": "May/07/2021 12:21"
+  },
   "CF115502859": {
     "contest_id": 1486,
     "language": "GNU C++17 (64)",
