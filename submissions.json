@@ -1,4 +1,23 @@
 {
+  "CF115727069": {
+    "contest_id": 1370,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1370/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Binary Subsequence Rotation",
+    "problem_url": "https://codeforces.com/contest/1370/problem/E",
+    "submission_id": "CF115727069",
+    "submission_url": "https://codeforces.com/contest/1370/submission/115727069",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "May/08/2021 20:34"
+  },
   "CF116174753": {
     "contest_id": 1349,
     "language": "GNU C++17 (64)",
