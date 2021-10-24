@@ -1,4 +1,20 @@
 {
+  "CF132962283": {
+    "contest_id": 1579,
+    "language": "Go",
+    "path": "codeforces/1579/G.go",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Minimal Coverage",
+    "problem_url": "https://codeforces.com/contest/1579/problem/G",
+    "submission_id": "CF132962283",
+    "submission_url": "https://codeforces.com/contest/1579/submission/132962283",
+    "tags": [
+      "dp",
+      "*2200"
+    ],
+    "timestamp": "Oct/24/2021 23:34"
+  },
   "CF141952838": {
     "contest_id": 1622,
     "language": "GNU C++17 (64)",
