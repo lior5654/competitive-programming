@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-3 | [E - Special Positions](https://codeforces.com/contest/1641/problem/E) | [GNU C++17 (64)](./codeforces/1641/E.cpp) | `combinatorics` `divide and conquer` `fft` `math` `*3300` | Mar/06/2022 02:56 | 
-2 | [A - Reverse](https://codeforces.com/contest/1638/problem/A) | [GNU C++17 (64)](./codeforces/1638/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | Mar/04/2022 17:32 | 
-1 | [E - Best Pair](https://codeforces.com/contest/1637/problem/E) | [GNU C++17 (64)](./codeforces/1637/E.cpp) | `binary search` `brute force` `implementation` `*2100` | Feb/27/2022 19:40 | 
+4 | [E - Special Positions](https://codeforces.com/contest/1641/problem/E) | [GNU C++17 (64)](./codeforces/1641/E.cpp) | `combinatorics` `divide and conquer` `fft` `math` `*3300` | Mar/06/2022 02:56 | 
+3 | [A - Reverse](https://codeforces.com/contest/1638/problem/A) | [GNU C++17 (64)](./codeforces/1638/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | Mar/04/2022 17:32 | 
+2 | [E - Best Pair](https://codeforces.com/contest/1637/problem/E) | [GNU C++17 (64)](./codeforces/1637/E.cpp) | `binary search` `brute force` `implementation` `*2100` | Feb/27/2022 19:40 | 
+1 | [D1 - Game on Sum (Easy Version)](https://codeforces.com/contest/1628/problem/D1) | [GNU C++17 (64)](./codeforces/1628/D1.cpp) | `combinatorics` `dp` `games` `math` `*2100` | Jan/22/2022 18:21 | 
