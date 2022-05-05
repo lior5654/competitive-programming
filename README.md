@@ -12,17 +12,18 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-327 | [D - Edge Split](https://codeforces.com/contest/1726/problem/D) | [GNU C++17 (64)](./codeforces/1726/D.cpp) | `brute force` `constructive algorithms` `dfs and similar` `dsu` `graphs` `probabilities` `trees` `*2000` | Sep/15/2022 00:28 | 
-326 | [E - Placing Jinas](https://codeforces.com/contest/1696/problem/E) | [GNU C++17 (64)](./codeforces/1696/E.cpp) | `combinatorics` `math` `*2000` | Jun/25/2022 19:13 | 
-325 | [C - Fishingprince Plays With Array](https://codeforces.com/contest/1696/problem/C) | [GNU C++17 (64)](./codeforces/1696/C.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1400` | Jun/25/2022 18:51 | 
-324 | [B - NIT Destroys the Universe](https://codeforces.com/contest/1696/problem/B) | [GNU C++17 (64)](./codeforces/1696/B.cpp) | `greedy` `*900` | Jun/25/2022 17:44 | 
-323 | [A - NIT orz!](https://codeforces.com/contest/1696/problem/A) | [GNU C++17 (64)](./codeforces/1696/A.cpp) | `bitmasks` `greedy` `*800` | Jun/25/2022 17:37 | 
-322 | [E - Coloring](https://codeforces.com/contest/1697/problem/E) | [GNU C++17 (64)](./codeforces/1697/E.cpp) | `brute force` `combinatorics` `constructive algorithms` `dp` `geometry` `graphs` `greedy` `implementation` `math` `*2400` | Jun/17/2022 00:17 | 
-321 | [A - Xor-tree](https://codeforces.com/contest/429/problem/A) | [GNU C++17 (64)](./codeforces/429/A.cpp) | `dfs and similar` `trees` `*1300` | May/07/2022 17:26 | 
-320 | [F - Yet another 2D Walking](https://codeforces.com/contest/1066/problem/F) | [GNU C++17 (64)](./codeforces/1066/F.cpp) | `dp` `*2100` | May/07/2022 03:01 | 
-319 | [D - Keep the Average High](https://codeforces.com/contest/1616/problem/D) | [GNU C++17 (64)](./codeforces/1616/D.cpp) | `dp` `greedy` `math` `*2000` | May/06/2022 16:58 | 
-318 | [G - Sorting Pancakes](https://codeforces.com/contest/1675/problem/G) | [GNU C++17 (64)](./codeforces/1675/G.cpp) | `dp` `*2300` | May/06/2022 14:27 | 
-317 | [F - Vlad and Unfinished Business](https://codeforces.com/contest/1675/problem/F) | [GNU C++17 (64)](./codeforces/1675/F.cpp) | `dfs and similar` `dp` `greedy` `trees` `*1800` | May/05/2022 18:38 | 
+328 | [D - Edge Split](https://codeforces.com/contest/1726/problem/D) | [GNU C++17 (64)](./codeforces/1726/D.cpp) | `brute force` `constructive algorithms` `dfs and similar` `dsu` `graphs` `probabilities` `trees` `*2000` | Sep/15/2022 00:28 | 
+327 | [E - Placing Jinas](https://codeforces.com/contest/1696/problem/E) | [GNU C++17 (64)](./codeforces/1696/E.cpp) | `combinatorics` `math` `*2000` | Jun/25/2022 19:13 | 
+326 | [C - Fishingprince Plays With Array](https://codeforces.com/contest/1696/problem/C) | [GNU C++17 (64)](./codeforces/1696/C.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1400` | Jun/25/2022 18:51 | 
+325 | [B - NIT Destroys the Universe](https://codeforces.com/contest/1696/problem/B) | [GNU C++17 (64)](./codeforces/1696/B.cpp) | `greedy` `*900` | Jun/25/2022 17:44 | 
+324 | [A - NIT orz!](https://codeforces.com/contest/1696/problem/A) | [GNU C++17 (64)](./codeforces/1696/A.cpp) | `bitmasks` `greedy` `*800` | Jun/25/2022 17:37 | 
+323 | [E - Coloring](https://codeforces.com/contest/1697/problem/E) | [GNU C++17 (64)](./codeforces/1697/E.cpp) | `brute force` `combinatorics` `constructive algorithms` `dp` `geometry` `graphs` `greedy` `implementation` `math` `*2400` | Jun/17/2022 00:17 | 
+322 | [A - Xor-tree](https://codeforces.com/contest/429/problem/A) | [GNU C++17 (64)](./codeforces/429/A.cpp) | `dfs and similar` `trees` `*1300` | May/07/2022 17:26 | 
+321 | [F - Yet another 2D Walking](https://codeforces.com/contest/1066/problem/F) | [GNU C++17 (64)](./codeforces/1066/F.cpp) | `dp` `*2100` | May/07/2022 03:01 | 
+320 | [D - Keep the Average High](https://codeforces.com/contest/1616/problem/D) | [GNU C++17 (64)](./codeforces/1616/D.cpp) | `dp` `greedy` `math` `*2000` | May/06/2022 16:58 | 
+319 | [G - Sorting Pancakes](https://codeforces.com/contest/1675/problem/G) | [GNU C++17 (64)](./codeforces/1675/G.cpp) | `dp` `*2300` | May/06/2022 14:27 | 
+318 | [F - Vlad and Unfinished Business](https://codeforces.com/contest/1675/problem/F) | [GNU C++17 (64)](./codeforces/1675/F.cpp) | `dfs and similar` `dp` `greedy` `trees` `*1800` | May/05/2022 18:38 | 
+317 | [E - Replace With the Previous, Minimize](https://codeforces.com/contest/1675/problem/E) | [GNU C++17 (64)](./codeforces/1675/E.cpp) | `dsu` `greedy` `strings` `*1500` | May/05/2022 18:18 | 
 316 | [E - Gojou and Matrix Game](https://codeforces.com/contest/1658/problem/E) | [GNU C++17 (64)](./codeforces/1658/E.cpp) | `data structures` `dp` `games` `hashing` `implementation` `math` `number theory` `sortings` `*2500` | Apr/01/2022 18:47 | 
 315 | [E - Special Positions](https://codeforces.com/contest/1641/problem/E) | [GNU C++17 (64)](./codeforces/1641/E.cpp) | `combinatorics` `divide and conquer` `fft` `math` `*3300` | Mar/06/2022 02:56 | 
 314 | [A - Reverse](https://codeforces.com/contest/1638/problem/A) | [GNU C++17 (64)](./codeforces/1638/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | Mar/04/2022 17:32 | 
