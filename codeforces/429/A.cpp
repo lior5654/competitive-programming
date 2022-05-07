@@ -1,74 +1,36 @@
-/*
-                            . .  ,  ,
-                            |` \/ \/ \,',
-                            ;          ` \/\,.
-                           :               ` \,/
-                           |                  /
-                           ;                 :
-                          :                  ;
-                          |      ,---.      /
-                         :     ,'     `,-._ \
-                         ;    (   o    \   `'
-                       _:      .      ,'  o ;
-                      /,.`      `.__,'`-.__,
-                      \_  _               \
-                     ,'  / `,          `.,'
-               ___,'`-._ \_/ `,._        ;
-            __;_,'      `-.`-'./ `--.____)
-         ,-'           _,--\^-'
-       ,:_____      ,-'     \
-      (,'     `--.  \;-._    ;
-      :    Y      `-/    `,  :
-      :    :       :     /_;'
-      :    :       |    :
-       \    \      :    :
-        `-._ `-.__, \    `.
-           \   \  `. \     `.
-         ,-;    \---)_\ ,','/
-         \_ `---'--'" ,'^-;'
-         (_`     ---'" ,-')
-         / `--.__,. ,-'    \
--hrr-    )-.__,-- ||___,--' `-.
-        /._______,|__________,'\
-        `--.____,'|_________,-'
 
-                             __
-                   _ ,___,-'",-=-.
-       __,-- _ _,-'_)_  (""`'-._\ `.
-    _,'  __ |,' ,-' __)  ,-     /. |
-  ,'_,--'   |     -'  _)/         `\
-,','      ,'       ,-'_,`           :
-,'     ,-'       ,(,-(              :
-     ,'       ,-' ,    _            ;
-    /        ,-._/`---'            /
-   /        (____)(----. )       ,'
-  /         (      `.__,     /\ /,
- :           ;-.___         /__\/|
- |         ,'      `--.      -,\ |
- :        /            \    .__/
-  \      (__            \    |_
-   \       ,`-, *       /   _|,\
-    \    ,'   `-.     ,'_,-'    \
-   (_\,-'    ,'\")--,'-'       __\
-    \       /  // ,'|      ,--'  `-.
-     `-.    `-/ \'  |   _,'         `.
-        `-._ /      `--'/             \
--hrr-      ,'           |              \
-          /             |               \
-       ,-'              |               /
-      /                 |             -'
+/****************************** begin /template.h ******************************/
 
-*/
+/***********************************************************************
+ * [?] APIO 2021 Template
+ * [+] Made By: Lior Yehezkely, FiveSixFiveFour
+ * [~] Apples are ORZ
+ * *********************************************************************/
 
+/*** begin #define flags ***/
+// #define USE_ORDERED_STATISTICS
+// #define BIG_BIGINT
+/*** end #define flags ***/
+
+/*** begin includes ***/
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp> // Common file
-#include <ext/pb_ds/tree_policy.hpp> // Including 
 
-using namespace __gnu_pbds;
+#ifdef USE_ORDERED_STATISTICS
+    #include <ext/pb_ds/assoc_container.hpp>
+    #include <ext/pb_ds/tree_policy.hpp>
+    using namespace __gnu_pbds;
+#endif
+
 using namespace std;
+/*** end includes ***/
 
-
+/*** begin typedefs ***/
 typedef long long int ll;
+#ifdef BIG_BIGINT
+    typedef __int128_t bigint;
+#else
+    typedef ll bigint;
+#endif
 typedef pair<int, int> pi;
 typedef pair<ll, ll> pl;
 typedef vector<int> vi;
@@ -83,128 +45,122 @@ typedef set<int> si;
 typedef multiset<int> msi;
 typedef set<ll> sl;
 typedef multiset<ll> msl;
-typedef tree<
-int,
-null_type,
-less<int>,
-rb_tree_tag,
-tree_order_statistics_node_update>
-ordered_set;
-
+typedef long double ld;
 template<class T> using func = function<T>;
 
+#ifdef USE_ORDERED_STATISTICS
+    typedef tree<
+    pl,
+    null_type,
+    less<pl>,
+    rb_tree_tag,
+    tree_order_statistics_node_update>
+    ordered_set;
+#endif
+
+/*** end typedefs ***/
+
+/*** begin #defines ***/
 #define clrcin cin.ignore(numeric_limits<streamsize>::max(),'\n');
 #define GOGOGO ios::sync_with_stdio(false); cin.tie(nullptr);
 #define BYEBYE return 0;
 
 #define all(cn) (cn).begin(), (cn).end()
 #define rep(i, n) for (int i = 0; i < n; ++i)
-#define repk(i, k, n) for(int i = k; i < n; ++i)
-
+#define csz(c) ((int)c.size())
 #define mp make_pair
 #define pb push_back
+#define eb emplace_back
 #define fi first
 #define se second
 
 #define popcnt __builtin_popcount
-#define gcd std::__detail::__gcd
-#define lcm std::__detail::__lcm
+#define popcntll __builtin_popcount_ll
+
+/*** end #defines ***/
 
 const int INFI = 1e9 + 5;
-const ll INFL = 4e18 + 5;
+const ll INFL = 1e18 + 5;
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count()); 
+auto dist = uniform_int_distribution<int>(0, INFI); 
+auto distll = uniform_int_distribution<ll>(0, INFL); 
+int rnd() { return dist(rng); }
+ll rndl() { return distll(rng); }
 
-template<class T> void aread(T* arr, int ___n)
-{
-    rep(i, ___n)
-    {
-        cin >> arr[i];
-    }
-}
-
-
-// LIORZ LIORZ LIORZ LIORZ LIORZ
+/****************************** end /template.h ******************************/
 
 
+/****************************** begin /main.cpp ******************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*** begin #define flags ***/
 //#define BRUH_WHY_TESTCASES
-const int maxn = 1e5 + 5;
+//#define PREC 7
+//#define INPUT_FILE "hi.in"
+//#define OUTPUT_FILE "hi.out"
+/*** end #define flags ***/
 
-vi g[maxn];
-vi gc[2][maxn];
-bitset<maxn> init, goal = 0;
-bitset<maxn> color = 0;
-vi res;
 
-void dfs2(int c, int p=-1, bool xr=false) // testing both styles to see which one I like better
-{
-    if(xr^init[c] != goal[c])
-    {
-        xr = !xr;
-        res.pb(c);
+const int root = 1;
+
+
+int n;
+vvi g;
+vector<bool> init; vector<bool> goal;
+vi chosen;
+
+
+
+
+void dfs(int c, int p=-1, bool depth=false, bool odd_flipped=false,bool even_flipped=false) {
+    if((depth == false && even_flipped) || (depth == true && odd_flipped)) {
+        init[c] = !init[c];
     }
-    for(auto e : gc[color[c]][c])
-    {
-        if(e!=p) dfs2(e, c, xr);
-    }
-}
-void solve()
-{
-    g[0].pb(1);
-    g[1].pb(0);
-    int n; cin >> n; rep(i, n-1 ) {int s, t; cin >> s >> t; g[s].pb(t); g[t].pb(s);}
-    func<void(int, int)> dfs = [&](int c, int p)
-    {
-        color[c] = !color[p];
-        for(auto e : g[c]) {
-            if(e!=p){gc[color[p]][p].pb(e); dfs(e, c);}
+    if(init[c] != goal[c]) {
+        init[c] = goal[c];
+        chosen.pb(c);
+        if(depth == false) {
+            even_flipped = !even_flipped;
+        } else {
+            odd_flipped = !odd_flipped;
         }
-    };
-    dfs(1, 0);
-    rep(i, n)
-    {
-        int cr; cin >> cr; init[i+1] = cr;
     }
-    rep(i, n)
-    {
-        int cr; cin >> cr; goal[i+1] = cr;
+    for(auto e : g[c]) {
+        if(e!=p) dfs(e, c, !depth, odd_flipped, even_flipped);
     }
-    dfs2(1);
-    dfs2(0);
-    cout << res.size() << '\n';
-    for(auto e : res) cout << e << ' ';
-    cout << endl;
+}
 
-    
+void input() {
+    cin >> n;
+    g = vvi(n+1, vi());
+    init = vector<bool>(n+1, false);
+    goal = vector<bool>(n+1, false);
+
+    rep(i, n-1) {
+        int u, v; cin>> u >> v;
+        g[u].push_back(v);
+        g[v].push_back(u);
+    }
+    for(int i = 1; i <= n; i++) {
+        int val; cin >>val;
+        if(val == 1) init[i] = true;
+    }
+    for(int i = 1; i <= n; i++) {
+        int val; cin >>val;
+        if(val == 1) goal[i] = true;
+    }
+}
+
+
+
+void solve(int t) {
+    input();
+    dfs(root);
+    cout << chosen.size() << '\n';
+    for(auto e : chosen) {
+        cout << e << '\n';
+    }
+
 }
 
 
@@ -248,16 +204,30 @@ void solve()
 
 
 
-int main()
+
+signed main()
 {
+    #ifdef INPUT_FILE
+        freopen(INPUT_FILE, "r", stdin);
+    #endif
+    #ifdef OUTPUT_FILE
+        freopen(OUTPUT_FILE, "w", stdout);
+    #endif
     GOGOGO
+    #ifdef PREC
+      cout << fixed << setprecision(PREC);
+    #endif
     int t=1;
     #ifdef BRUH_WHY_TESTCASES
-        cin >> t;
+            cin >> t;
     #endif
+
+    int count = 1;
     while(t--)
     {
-        solve();
+        //cout << "Case #" << count << ":";
+        solve(count);
+        count += 1;
     }
     BYEBYE
 }
@@ -267,3 +237,10 @@ int main()
 * GUESS A!!!!!!!
 * DO SOMETHING INSTEAD OF NOTHING
 */
+
+/****************************** end /main.cpp ******************************/
+
+
+
+
+
