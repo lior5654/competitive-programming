@@ -2417,6 +2417,23 @@
     ],
     "timestamp": "Apr/01/2022 18:47"
   },
+  "CF161786884": {
+    "contest_id": 1696,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1696/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Placing Jinas",
+    "problem_url": "https://codeforces.com/contest/1696/problem/E",
+    "submission_id": "CF161786884",
+    "submission_url": "https://codeforces.com/contest/1696/submission/161786884",
+    "tags": [
+      "combinatorics",
+      "math",
+      "*2000"
+    ],
+    "timestamp": "Jun/25/2022 19:13"
+  },
   "CF172187009": {
     "contest_id": 1726,
     "language": "GNU C++17 (64)",
