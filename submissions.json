@@ -2417,6 +2417,25 @@
     ],
     "timestamp": "Apr/01/2022 18:47"
   },
+  "CF161779978": {
+    "contest_id": 1696,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces/1696/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Fishingprince Plays With Array",
+    "problem_url": "https://codeforces.com/contest/1696/problem/C",
+    "submission_id": "CF161779978",
+    "submission_url": "https://codeforces.com/contest/1696/submission/161779978",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Jun/25/2022 18:51"
+  },
   "CF161786884": {
     "contest_id": 1696,
     "language": "GNU C++17 (64)",

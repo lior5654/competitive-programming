@@ -12,8 +12,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-319 | [D - Edge Split](https://codeforces.com/contest/1726/problem/D) | [GNU C++17 (64)](./codeforces/1726/D.cpp) | `brute force` `constructive algorithms` `dfs and similar` `dsu` `graphs` `probabilities` `trees` `*2000` | Sep/15/2022 00:28 | 
-318 | [E - Placing Jinas](https://codeforces.com/contest/1696/problem/E) | [GNU C++17 (64)](./codeforces/1696/E.cpp) | `combinatorics` `math` `*2000` | Jun/25/2022 19:13 | 
+320 | [D - Edge Split](https://codeforces.com/contest/1726/problem/D) | [GNU C++17 (64)](./codeforces/1726/D.cpp) | `brute force` `constructive algorithms` `dfs and similar` `dsu` `graphs` `probabilities` `trees` `*2000` | Sep/15/2022 00:28 | 
+319 | [E - Placing Jinas](https://codeforces.com/contest/1696/problem/E) | [GNU C++17 (64)](./codeforces/1696/E.cpp) | `combinatorics` `math` `*2000` | Jun/25/2022 19:13 | 
+318 | [C - Fishingprince Plays With Array](https://codeforces.com/contest/1696/problem/C) | [GNU C++17 (64)](./codeforces/1696/C.cpp) | `constructive algorithms` `greedy` `implementation` `math` `*1400` | Jun/25/2022 18:51 | 
 317 | [E - Gojou and Matrix Game](https://codeforces.com/contest/1658/problem/E) | [GNU C++17 (64)](./codeforces/1658/E.cpp) | `data structures` `dp` `games` `hashing` `implementation` `math` `number theory` `sortings` `*2500` | Apr/01/2022 18:47 | 
 316 | [E - Special Positions](https://codeforces.com/contest/1641/problem/E) | [GNU C++17 (64)](./codeforces/1641/E.cpp) | `combinatorics` `divide and conquer` `fft` `math` `*3300` | Mar/06/2022 02:56 | 
 315 | [A - Reverse](https://codeforces.com/contest/1638/problem/A) | [GNU C++17 (64)](./codeforces/1638/A.cpp) | `constructive algorithms` `greedy` `math` `*800` | Mar/04/2022 17:32 | 
